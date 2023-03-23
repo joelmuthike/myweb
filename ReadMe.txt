@@ -10,10 +10,10 @@ Within the kubectl_deploy directory, there are 2 simple manifest files that make
 From the root of this repository, simply run:
 
 kubectl apply -f kubectl_deploy -n YOUR-NAMESPACE
-The deployment will create a pod called maintenance-page-* and a service named maintenance-page-svc.
++ The deployment will create a pod called maintenance-page-* and a service named maintenance-page-svc.
 
-Redirecting traffic
-Having deployed the maintenane page is not enough - traffic must be redirected to it.
++ Redirecting traffic
++ Having deployed the maintenane page is not enough - traffic must be redirected to it.
 
 This can be achieved by changing the serviceName field in your current ingress to point to maintenance-page-svc.
 This can either be done by redeploying the ingress or doing an in-place edit of the ingress.
